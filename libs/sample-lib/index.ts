@@ -1,1 +1,1 @@
-export { SampleLib } from './src/sample-lib';
+export { SampleLibModule } from './src/sample-lib.module';
