@@ -5,7 +5,7 @@ import { SampleButtonComponent } from './sample-button/sample-button.component';
 
 @NgModule({
   imports: [CommonModule, HttpModule],
-  exports: [],
+  exports: [SampleButtonComponent],
   declarations: [SampleButtonComponent],
   providers: []
 })
