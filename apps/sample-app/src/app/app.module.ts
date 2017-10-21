@@ -3,16 +3,17 @@ import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NxModule } from '@nrwl/nx';
 
-import { SampleLibModule } from "@nx-experiments/sample-lib";
+import { SampleLibModule, SampleButtonComponent } from "@nx-experiments/sample-lib";
 @NgModule({
   imports: [
     BrowserModule, NxModule.forRoot(),
     SampleLibModule
   ],
   exports: [
-    SampleLibModule
+    SampleLibModule,
+    SampleButtonComponent
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, SampleButtonComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
